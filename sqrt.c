@@ -31,6 +31,7 @@ int main(int argc, char* argv[]) {
         printf("\n");
     }
     printf("End of program. Exiting.\n");
+    printf("Added line to create conflict. \n");
 	return(0);
 
 } // end main
