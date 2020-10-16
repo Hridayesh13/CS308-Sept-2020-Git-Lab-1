@@ -12,13 +12,13 @@ positive number. */
 int main(int argc, char* argv[]) {
 	
 	if (argc != 2) {
-		printf("NEGSUPPORT:Usage: sqrt input\n\n");
+		printf("DEBUG: NEGSUPPORT:Usage: sqrt input\n\n");
 		exit(-1);
 	}
 
 	int input = atoi(argv[1]);
     if (input >= 0) {
-        printf("NEGSUPPORT:Sqrt of %d is %f\n",input,sqrt(input));
+        printf("DEBUG: NEGSUPPORT:Sqrt of %d is %f\n",input,sqrt(input));
     }
     // added input testing
     //
@@ -26,12 +26,12 @@ int main(int argc, char* argv[]) {
     // added negative number support
     else {
         complex double result = csqrt( (complex double)input );
-        printf("NEGSUPPORT:Sqrt of %d is ",input);
+        printf("DEBUG: NEGSUPPORT:Sqrt of %d is ",input);
         printfc(result);
         printf("\n");
     }
-    printf("NEGSUPPORT:End of program. Exiting.\n");
-    printf("NEGSUPPORT:conflict in br3. \n");
+    printf("DEBUG: NEGSUPPORT:End of program. Exiting.\n");
+    printf("DEBUG: NEGSUPPORT:conflict in br3. \n");
 	return(0);
 
 } // end main
