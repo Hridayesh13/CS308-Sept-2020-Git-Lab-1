@@ -30,7 +30,8 @@ int main(int argc, char* argv[]) {
         printfc(result);
         printf("\n");
     }
-    printf("Initial working code for sqrt. \n");
+    printf("End of program. Exiting.\n");
+    printf("conflict in br3. \n");
 	return(0);
 
 } // end main
