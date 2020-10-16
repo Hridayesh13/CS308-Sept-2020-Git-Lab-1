@@ -4,6 +4,8 @@ positive number. */
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
+#include <complex.h>
+#define printfc(c) printf("%f%c%fi",creal(c),(cimag(c)>=0.0f)?'+':'\0',cimag(c))
 
 // first commit
 // second edit
@@ -19,8 +21,14 @@ int main(int argc, char* argv[]) {
         printf("Sqrt of %d is %f\n",input,sqrt(input));
     }
     // added input testing
+    //
+    //version 3
+    // added negative number support
     else {
-        printf("Invalid input :(\n");
+        complex double result = csqrt( (complex double)input );
+        printf("Sqrt of %d is ",input);
+        printfc(result);
+        printf("\n");
     }
     printf("End of program. Exiting.\n");
 	return(0);
