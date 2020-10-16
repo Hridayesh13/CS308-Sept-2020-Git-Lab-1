@@ -5,6 +5,8 @@ positive number. */
 #include <stdlib.h>
 #include <math.h>
 
+// first commit
+// second edit
 int main(int argc, char* argv[]) {
 	
 	if (argc != 2) {
